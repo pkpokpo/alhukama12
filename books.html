@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> مكتبة الحكماء </title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>مكتبة الحكماء</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="books.html">الكتب</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>قائمة الكتب</h2>
+        <table>
+            <tr>
+                <th>رمز الكتاب ISBN </th>
+                <th>العنوان</th>
+                <th>السعر</th>
+                <th>إظهار التفاصيل</th>
+                <th>اختيار</th>
+            </tr>
+            <tr>
+                <td>978-977-416-033-3</td>
+                <td>الأيام</td>
+                <td>50000 ل.س</td>
+                <td><input type="checkbox" name="showDetails" onclick="toggleDetails(1)"></td>
+                <td><input type="radio" name="choosebooks" value="1" data-isbn="978-977-416-033-3" data-details="الأيام" data-rent="50000"></td>
+            </tr>
+            <tr id="detailsRow1" style="display:none;">
+                <td colspan="5">
+                    <div id="details1" style="display:none;">
+                        <h4 style="text-align: right;">تفاصيل الكتاب</h4>
+                        <table>
+                            <tr>
+                                <th>الناشر</th>
+                                <th>تصنيف الكتاب</th>
+                                <th>ملخص </th>                  
+                            </tr>
+                            <tr>
+                                <td> دار الهلال	</td>
+                                <td>تصوير ذاتي	</td>
+                                <td> هي سيرة ذاتية للكاتب المصري طه حسين. يروي الكتاب قصة حياة الكاتب منذ طفولته في قرية صغيرة بمصر وحتى وصوله إلى باريس للدراسة. الكتاب يعرض العديد من التحديات والصعوبات التي واجهها حسين، بما في ذلك فقدانه للبصر وكيف تغلب على ذلك بإرادته القوية وتصميمه على تحقيق النجاح الأكاديمي. الكتاب يعتبر من أهم الأعمال الأدبية في الأدب العربي الحديث لأنه يقدم نظرة عميقة وصادقة على الحياة في مصر خلال فترة التحول الاجتماعي والسياسي.
+                                </td>
+                            </tr>
+                        </table>
+                        <h4 style="text-align: right;">صور الكتاب </h4>
+                        <img src="./images/1.jfif" alt="الصورة الاولى من الكتاب"> 
+                        <img src="./images/2.jfif"  alt="الصورة الثانية من الكتاب">
+                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>978-9953-0-0343-0</td>
+                <td>ياسمين العودة</td>
+                <td>45000 ل.س</td>
+                <td><input type="checkbox" name="showDetails" onclick="toggleDetails(2)"></td>
+                <td><input type="radio" name="choosebooks" value="2" data-isbn="978-9953-0-0343-0" data-details="ياسمين العودة" data-rent="45000"></td>
+            </tr>
+            <tr id="detailsRow2" style="display:none;">
+                <td colspan="5">
+                    <div id="details2" style="display:none;">
+                        <h4 style="text-align: right;">تفاصيل الكتاب</h4>
+                        <table>
+                            <tr>
+                                <th>الناشر</th>
+                                <th>تصنيف الكتاب</th>
+                               <th>ملخص </th>                               
+                            </tr>
+                            <tr>
+                                <td> دار الحلم	</td>
+                                <td>رواية</td>
+                                <td>  رواية “ياسمين العودة” هي الرواية التي طال انتظارها لمحبي رواية “غربة الياسمين” للكاتبة خولة حمدي تأتي هذه الرواية لتكمل قصة أبطال الرواية السابقة وتسلط الضوء على “حق العودة” لكل شاب مغترب ولكل فلسطيني وعربي مهجر.      </td>
+                            </tr>
+                        </table>
+                        <h4 style="text-align: right;">صور الكتاب</h4>
+                        <img src="./images/11.webp"  alt="الصورة الاولى من الكتاب"> 
+                        <img src="./images/22.webp" alt="الصورة الثانية من الكتاب">
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>978-9953-0-0342-5</td>
+                <td> رجال في الشمس</td>
+                <td>40000 ل.س</td>
+                <td><input type="checkbox" name="showDetails" onclick="toggleDetails(3)"></td>
+                <td><input type="radio" name="choosebooks" value="3" data-isbn="978-9953-0-0342-5" data-details="رجال في الشمس " data-rent="40000"></td>
+            </tr>
+            <tr id="detailsRow3" style="display:none;">
+                <td colspan="5">
+                    <div id="details3" style="display:none;">
+                        <h4 style="text-align: right;">تفاصيل الكتاب</h4>
+                        <table>
+                            <tr>
+                                <th>الناشر</th>
+                                <th>تصنيف الكتاب</th>
+                                <th>ملخص </th>                              
+                            </tr>
+                            <tr>
+                                <td>دار الوطن</td>
+                                <td>رواية</td>
+                                <td>هي قصة ملحمية عن ثلاثة لاجئين فلسطينيين يسعون للهجرة إلى الكويت بحثًا عن حياة أفضل. الرواية تسلط الضوء على معاناة اللاجئين الفلسطينيين وضياع هويتهم في صراع البقاء. تجسد القصة بشكل مؤثر الإحباط واليأس اللذين يعاني منهما الشعب الفلسطيني، مع توجيه نقد حاد للأوضاع السياسية والاجتماعية التي أدت إلى هذه الحالة.
+                                </td>                             
+                            </tr>
+                        </table>
+                        <h4 style="text-align: right;">صور الكتاب  </h4>
+                        <img src="./images/13.webp"  alt="الصورة الاولى من الكتاب"> 
+                        <img src="./images/23.webp" alt="الصورة الثانية من الكتاب">
+                       
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>978-9954-0-0346-2</td>
+                <td> العادات الذرية</td>
+                <td>55000 ل.س</td>
+                <td><input type="checkbox" name="showDetails" onclick="toggleDetails(4)"></td>
+                <td><input type="radio" name="choosebooks" value="4" data-isbn="978-9954-0-0346-2" data-details=" مدن الصلت" data-rent="55000"></td>
+            </tr>
+            <tr id="detailsRow4" style="display:none;">
+                <td colspan="5">
+                    <div id="details4" style="display:none;">
+                        <h4 style="text-align: right;">تفاصيل الكتاب</h4>
+                        <table>
+                            <tr>
+                                <th>الناشر</th>
+                                <th>تصنيف الكتاب</th>
+                                <th>ملخص </th>                             
+                            </tr>
+                            <tr>
+                                <td>دار التنوير	</td>
+                                <td>تنمية ذاتية</td>
+                               <td>العادات الذرية تتحدث عن القوة الكبيرة للتغييرات الصغيرة المتكررة بمرور الوقت. جيمس كلير يوضح كيف يمكن للعادات الصغيرة والمتكررة أن تحدث تأثيرات هائلة في حياتنا الشخصية والمهنية. يركز الكتاب على بناء عادات إيجابية</td>                             
+                            </tr>
+                        </table>
+                        <h4 style="text-align: right;">صور الكتاب </h4>
+                        <img src="./images/14.webp" alt="الصورة الاولى من الكتاب"> 
+                        <img src="./images/24.webp"  alt="الصورة الثانية من الكتاب">
+                       
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>978-9953-5-0342-3</td>
+                <td>موسم الهجرة إلى الشمال	</td>
+                <td>90000 ل.س</td>
+                <td><input type="checkbox" name="showDetails" onclick="toggleDetails(5)"></td>
+                <td><input type="radio" name="choosebooks" value="5" data-isbn="978-9953-5-0342-3" data-details= "موسم الهجرة إلى الشمال" data-rent="90000"></td>
+            </tr>
+            <tr id="detailsRow5" style="display:none;">
+                <td colspan="5">
+                    <div id="details5" style="display:none;">
+                        <h4 style="text-align: right;">تفاصيل الكتاب</h4>
+                        <table>
+                            <tr>
+                                <th>الناشر</th>
+                                <th>تصنيف الكتاب</th>
+                                <th>ملخص </th>                             
+                            </tr>
+                            <tr>
+                                <td> دار بدوي	</td>
+                                <td>رواية</td>
+                                <td>"موسم الهجرة إلى الشمال" للكاتب السوداني الطيب صالح، هي رواية عن مصطفى سعيد، رجل سوداني يعود إلى قريته بعد فترة طويلة قضاها في إنجلترا. الرواية تسلط الضوء على التوترات بين الثقافات المختلفة والصعوبات التي تواجه الفرد في محاولة التكيف مع هويتين مختلفتين. من خلال قصة حياة مصطفى، تعالج الرواية موضوعات الاستعمار والاغتراب والهوية الشخصية.
+                                </td>                               
+                            </tr>
+                        </table>
+                        <h4 style="text-align: right;">صور الكتاب </h4>
+                        <img src="./images/15.webp" alt="الصورة الاولى من الكتاب"> 
+                        <img src="./images/25.webp"  alt="الصورة الثانية من الكتاب">
+                    
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>978-9953-0-0341-7</td>
+                <td>قصص بيروتية</td>
+                <td>70000 ل.س</td>
+                <td><input type="checkbox" name="showDetails" onclick="toggleDetails(6)"></td>
+                <td><input type="radio" name="choosebooks" value="6" data-isbn="978-9953-0-0341-7" data-details=" قصص بيروتية" data-rent="70000"></td>
+            </tr>
+            <tr id="detailsRow6" style="display:none;">
+                <td colspan="5">
+                    <div id="details6" style="display:none;">
+                        <h4 style="text-align: right;">تفاصيل الكتاب</h4>
+                        <table>
+                            <tr>
+                                <th>الناشر</th>
+                                <th>تصنيف الكتاب</th>
+                                <th>ملخص </th>                              
+                            </tr>
+                            <tr>
+                                <td> دار بيروت	</td>
+                                <td>قصص قصيرة</td>
+                               <td>الكتاب يستعرض جوانب مختلفة من الثقافة اللبنانية والمجتمع البيروتي، ويعكس تطلعات وآمال الشخصيات، بالإضافة إلى التحديات التي يواجهونها. من خلال هذه القصص، يقدم كريمسكي صورة حية ودقيقة عن بيروت وأهلها، مما يجعله قطعة مهمة من الأدب الذي يسلط الضوء على جوانب إنسانية وعاطفية عميقة.</td>                            
+                            </tr>
+                        </table>
+                        <h4 style="text-align: right;">صور الكتاب </h4>
+                        <img src="./images/16.webp"  alt="الصورة الاولى من الكتاب"> 
+                        <img src="./images/26.webp"  alt="الصورة الثانية من الكتاب">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>978-9957-5-0342-0</td>
+                <td> فن اللامبالاة</td>
+                <td>45000 ل.س</td>
+                <td><input type="checkbox" name="showDetails" onclick="toggleDetails(7)"></td>
+                <td><input type="radio" name="choosebooks" value="7" data-isbn="978-9957-5-0342-0" data-details="فن اللامبالاة" data-rent="45000"></td>
+            </tr>
+            <tr id="detailsRow7" style="display:none;">
+                <td colspan="5">
+                    <div id="details7" style="display:none;">
+                        <h4 style="text-align: right;">تفاصيل الكتاب</h4>
+                        <table>
+                            <tr>
+                                <th>الناشر</th>
+                                <th>تصنيف الكتاب</th>
+                                <th>ملخص </th>                           
+                            </tr>
+                            <tr>
+                                <td> دار التنوير	</td>
+                                <td>مساعدة ذاتية</td>
+                               <td>"فن اللامبالاة: لعيش حياة تخالف المألوف" هو كتاب تنمية شخصية يقدم نصائح غير تقليدية حول كيفية التعامل مع الحياة ومشاكلها. مانسون يقدم رؤية تقوم على قبول القيود والصعوبات بدلاً من محاولة تجنبها أو السعي وراء الإيجابية المطلقة. يناقش الكتاب كيفية التركيز على ما هو مهم فعلاً في الحياة والتخلي عن السعي لتحقيق أهداف غير واقعية أو إرضاء الجميع. يعتمد على مبادئ الصراحة وقبول الذات والتعلم من الفشل كطرق للوصول إلى حياة أكثر رضى واستقراراً.</td>                             
+                            </tr>
+                        </table>
+                        <h4 style="text-align: right;">صور الكتاب </h4>
+                        <img src="./images/17.webp"  alt="الصورة الاولى من الكتاب"> 
+                        <img src="./images/27.webp"  alt="الصورة الثانية من الكتاب">
+                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>978-9953-4-0342-2</td>
+                <td> صاحب الظل الطويل</td>
+                <td>65000 ل.س</td>
+                <td><input type="checkbox" name="showDetails" onclick="toggleDetails(8)"></td>
+                <td><input type="radio" name="choosebooks" value="8" data-isbn="978-9953-4-0342-2" data-details="صاحب الظل الطويل" data-rent="65000"></td>
+            </tr>
+            <tr id="detailsRow8" style="display:none;">
+                <td colspan="8">
+                    <div id="details8" style="display:none;">
+                        <h4 style="text-align: right;">تفاصيل الكتاب</h4>
+                        <table>
+                            <tr>
+                                <th>الناشر</th>
+                                <th>تصنيف الكتاب</th>
+                                <th>ملخص </th>                            
+                            </tr>
+                            <tr>
+                                <td>دار تكوين</td>
+                                <td>رواية</td>
+                                <td>"صاحب الظل الطويل" هي رواية تدور حول جودي أبوت، وهي فتاة يتيمة تتلقى منحة دراسية من متبرع غامض لدراسة في كلية مرموقة. المتبرع، الذي لا تعرف جودي عنه سوى ظله الطويل، يطلب منها كتابة رسائل شهرية عنه. من خلال هذه الرسائل، نستكشف حياة جودي وتطور شخصيتها، وتجاربها الأكاديمية والاجتماعية، وأحلامها وطموحاتها. الرواية مكتوبة بأسلوب شيق ومرح،</td>                               
+                            </tr>
+                        </table>
+                        <h4 style="text-align: right;">صور الكتاب </h4>
+                        <img src="./images/18.webp"  alt="الصورة الاولى من الكتاب"> 
+                        <img src="./images/28.webp"  alt="الصورة الثانية من الكتاب">
+                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>978-9955-2-0342-3</td>
+                <td>الفيل الأزرق</td>
+                <td>80000 ل.س</td>
+                <td><input type="checkbox" name="showDetails" onclick="toggleDetails(9)"></td>
+                <td><input type="radio" name="choosebooks" value="9" data-isbn="978-9955-2-0342-3" data-details="الفيل الأزرق" data-rent="80000"></td>
+            </tr>
+            <tr id="detailsRow9" style="display:none;">
+                <td colspan="5">
+                    <div id="details9" style="display:none;">
+                        <h4 style="text-align: right;">تفاصيل الكتاب</h4>
+                        <table>
+                            <tr>
+                                <th>الناشر</th>
+                                <th>تصنيف الكتاب</th>
+                                <th>ملخص </th>                             
+                            </tr>
+                            <tr>
+                                <td> دار الشروق	</td>
+                                <td>رواية	</td>
+                                <td>"الفيل الأزرق" للكاتب أحمد مراد، تحكي قصة طبيب نفسي يُدعى يحيى راشد يعمل في مستشفى العباسية للصحة النفسية. تتغير حياة يحيى رأسًا على عقب عندما يتعامل مع مريض غامض يتضح أنه يعرفه شخصيًا. الرواية تجمع بين الغموض والرعب النفسي، حيث يكشف يحيى أسرارًا مروعة تتعلق بالماضي وتأثيرها على الحاضر. 
+                                </td>                               
+                            </tr>
+                        </table>
+                        <h4 style="text-align: right;">صورالكتاب</h4>
+                        <img src="./images/19.webp"  alt="الصورة الاولى من الكتاب"> 
+                        <img src="./images/29.webp"  alt="الصورة الثانية من الكتاب">
+                       
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>978-977-09-0222-5</td>
+                <td>أولاد حارتنا</td>
+                <td>50000 ل.س</td>
+                <td><input type="checkbox" name="showDetails" onclick="toggleDetails(10)"></td>
+                <td><input type="radio" name="choosebooks" value="10" data-isbn="978-977-09-0222-5" data-details=" أولاد حارتنا" data-rent="50000"></td>
+            </tr>
+            <tr id="detailsRow10" style="display:none;">
+                <td colspan="5">
+                    <div id="details10" style="display:none;">
+                        <h4 style="text-align: right;">تفاصيل الكتاب</h4>
+                        <table>
+                            <tr>
+                                <th>الناشر</th>
+                                <th>تصنيف الكتاب</th>
+                                <th>ملخص </th>                               
+                            </tr>
+                            <tr>
+                                <td> دار الشروق	</td>
+                                <td> رواية</td>
+                                <td>"أولاد حارتنا" للأديب نجيب محفوظ، هي رواية رمزية تعكس صراع بين قوى الخير والشر في حي شعبي. الشخصيات الرئيسية في الرواية تمثل رموزًا فلسفية ودينية تعبر عن رحلة الإنسان في الحياة وصراعه مع القوى المظلمة. من خلال الحكاية، يعرض محفوظ فكرة التمرد على القدر والسعي لتحقيق العدالة والمساواة. 
+                                </td>                             
+                            </tr>
+                        </table>
+                        <h4 style="text-align: right;">صورالكتاب</h4>
+                        <img src="./images/110.webp"alt="الصورة الاولى من الكتاب"> 
+                        <img src="./images/210.webp"  alt="الصورة الثانية من الكتاب">
+                        
+                    </div>
+                </td>
+            </tr>
+        </table>
+    
+        <button onclick="addToCart()">إضافة إلى السلة</button>
+
+        <h3>السلة</h3>
+        <ul id="cart"></ul>
+        <p>القيمة الإجمالية: <span id="totalAmount">0</span> ل.س</p>
+
+
+        <button onclick="showbooksForm()">متابعة</button>
+
+        <form id="booksForm" style="display: none;" onsubmit="return validateForm()">
+            <fieldset>
+                <legend>استمارة شراء الكتاب</legend>
+                <label for="fullName">الاسم الكامل:</label>
+                <input type="text" id="fullName" name="fullName" pattern="[أ-ي\s]+" title="يرجى إدخال أحرف هجائية فقط باللغة العربية."><br><br>
+                <label for="nationalID">الرقم الوطني:</label>
+                <input type="text" id="nationalID" name="nationalID" required><br><br>
+                <label for="birthdate">تاريخ الولادة:</label>
+                <input type="date" id="birthdate" name="birthdate" pattern="\d{2}-\d{2}-\d{4}" title="يرجى إدخال التاريخ بالشكل التالي: dd-mm-yyyy."><br><br>
+                <label for="mobileNumber">رقم الموبايل:</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" pattern="^(09[0-9]{8})$" title="يرجى إدخال رقم موبايل صحيح يبدأ بـ 09 ومكون من 10 أرقام."><br><br>
+                <label for="email">الإيميل:</label>
+                <input type="email" id="email" name="email"><br><br>
+               
+                  </div>
+                  <div class="form-input">
+                    <button  id="login-btn" >إرسال</button>
+                  </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 جميع الحقوق محفوظة لصالح مكتبة الحكماء
+    </footer>
+   
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/myFunctions.js"></script>
+    
+</body>
+</html>
